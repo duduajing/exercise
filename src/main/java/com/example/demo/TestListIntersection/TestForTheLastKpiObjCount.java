@@ -78,6 +78,7 @@ public class TestForTheLastKpiObjCount {
             Set<Integer> objKeys = baseObjs1.stream()
                     .collect(Collectors.groupingBy(BaseObj::getObjId))
                     .keySet();
+
             Set<Integer> objKeys2 = midDetailResults.get(k).stream()
                     .collect(Collectors.groupingBy(BaseObj::getObjId))
                     .keySet();
