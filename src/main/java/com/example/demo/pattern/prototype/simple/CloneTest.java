@@ -29,8 +29,9 @@ public class CloneTest {
 
         try {
             CloneTarget obj = (CloneTarget)p.clone();
+            System.out.println(obj);
             obj.getList().add(new CloneTarget());
-            System.out.println( p.getList().size());
+            System.out.println(p.equals(obj));
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
